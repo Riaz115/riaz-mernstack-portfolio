@@ -6,7 +6,8 @@ import "react-toastify/dist/ReactToastify.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./index.css";
 import "react-toastify/dist/ReactToastify.css";
-import { ToastContainer } from "react-toastify";
+
+import { ToastContainer, toast } from "react-toastify";
 import { MyDataProvider } from "./Store/MyDataProvider";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
