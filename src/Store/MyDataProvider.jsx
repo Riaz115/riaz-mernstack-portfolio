@@ -20,9 +20,11 @@ export const MyDataProvider = ({ children }) => {
     return localStorage.removeItem("token");
   };
 
+  console.log(user, "new user");
+
   //this is for the get value of user
   const forGetUserAllData = async () => {
-    const url = "http://localhost:5000/authUser";
+    const url = "https://riaz-portfolio-backend.vercel.app/authUser";
     const myOptions = {
       method: "GET",
       headers: {

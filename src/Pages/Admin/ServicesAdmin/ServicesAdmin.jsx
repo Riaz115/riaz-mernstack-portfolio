@@ -62,7 +62,7 @@ function ServicesAdmin() {
 
       //this is create service in database
       const forCreateService = async () => {
-        const url = "http://localhost:5000/admin/services";
+        const url = "https://riaz-portfolio-backend.vercel.app/admin/services";
         const ServiceOptions = {
           method: "POST",
           headers: {

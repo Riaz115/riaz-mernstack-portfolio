@@ -52,7 +52,7 @@ function UpdateServices() {
 
   //this is for the get data of all services
   const forGetService = async () => {
-    const url = `http://localhost:5000/admin/services/${id}/update`;
+    const url = `https://riaz-portfolio-backend.vercel.app/admin/services/${id}/update`;
     const forOptions = {
       methode: "GET",
       headers: {
@@ -107,7 +107,7 @@ function UpdateServices() {
 
       //this is for the service updaate
       const forUpdateService = async () => {
-        const url = `http://localhost:5000/admin/services/${id}`;
+        const url = `https://riaz-portfolio-backend.vercel.app/admin/services/${id}`;
         const funOptions = {
           method: "PATCH",
           headers: {

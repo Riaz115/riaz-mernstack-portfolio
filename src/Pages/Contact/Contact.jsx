@@ -64,7 +64,7 @@ function Contact() {
 
       //this is for the send contact data
       const forsendContactData = async () => {
-        const url = "http://localhost:5000/contact";
+        const url = "https://riaz-portfolio-backend.vercel.app/contact";
         const forOptions = {
           method: "POST",
           headers: {

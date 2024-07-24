@@ -13,7 +13,7 @@ function ContactAdmin() {
 
   //this is for the get data from contact section
   const forGetContacts = async () => {
-    const url = "http://localhost:5000/admin/contacts";
+    const url = "https://riaz-portfolio-backend.vercel.app/admin/contacts";
     const forOptions = {
       method: "GET",
       headers: {
@@ -39,7 +39,7 @@ function ContactAdmin() {
 
   //this is for the delete
   const forContactDelete = async (id) => {
-    const url = `http://localhost:5000/admin/contacts/${id}`;
+    const url = `https://riaz-portfolio-backend.vercel.app/admin/contacts/${id}`;
     const forOptions = {
       method: "DELETE",
       headers: {

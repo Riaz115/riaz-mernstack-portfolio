@@ -48,7 +48,7 @@ function Login() {
 
       //this is for login backend
       const forLoginApi = async () => {
-        const url = "http://localhost:5000/login";
+        const url = "https://riaz-portfolio-backend.vercel.app/login";
         const loginOption = {
           method: "POST",
           headers: {

@@ -13,7 +13,7 @@ function UserAdmin() {
 
   //this is for the get all users
   const forGetAllUsers = async () => {
-    const url = "http://localhost:5000/admin/getUser";
+    const url = "https://riaz-portfolio-backend.vercel.app/admin/getUser";
     const myOptions = {
       method: "GET",
       headers: {
@@ -38,7 +38,7 @@ function UserAdmin() {
 
   //this is for the deleteu user
   const forDeleteUser = async (id) => {
-    const url = `http://localhost:5000/admin/user/${id}`;
+    const url = `https://riaz-portfolio-backend.vercel.app/admin/user/${id}`;
     const myOptions = {
       method: "DELETE",
       headers: {

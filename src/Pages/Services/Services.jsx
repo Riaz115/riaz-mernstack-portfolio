@@ -16,7 +16,7 @@ function Services() {
 
   //this is for get servcies
   const forGetServices = async () => {
-    const url = "http://localhost:5000/services";
+    const url = "https://riaz-portfolio-backend.vercel.app/services";
     const forOptions = {
       method: "GET",
       Authorization: `Bearer ${token}`,
@@ -38,7 +38,7 @@ function Services() {
 
   //this is for the delete service
   const forDeleteService = async (id) => {
-    const url = `http://localhost:5000/admin/service/${id}`;
+    const url = `https://riaz-portfolio-backend.vercel.app/admin/service/${id}`;
     const forOptions = {
       method: "DELETE",
       headers: {

@@ -67,7 +67,7 @@ function Register() {
 
       //this is for send and store data in database api function
       const forSendata = async () => {
-        const url = "http://localhost:5000/register";
+        const url = "https://riaz-portfolio-backend.vercel.app/register";
         const sendOptions = {
           method: "POST",
           headers: {

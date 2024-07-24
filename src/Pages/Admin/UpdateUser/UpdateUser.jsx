@@ -24,7 +24,7 @@ function UpdateUser() {
 
   //this is for get user data with id
   const forGetUserData = async () => {
-    const url = `http://localhost:5000/admin/user/${id}/update`;
+    const url = `https://riaz-portfolio-backend.vercel.app/admin/user/${id}/update`;
     const myOptions = {
       method: "GET",
       headers: {
@@ -91,7 +91,7 @@ function UpdateUser() {
 
       //this is for update user by id
       const updateUserById = async () => {
-        const url = `http://localhost:5000/admin/user/${id}`;
+        const url = `https://riaz-portfolio-backend.vercel.app/admin/user/${id}`;
         const myOptions = {
           method: "PATCH",
           headers: {
