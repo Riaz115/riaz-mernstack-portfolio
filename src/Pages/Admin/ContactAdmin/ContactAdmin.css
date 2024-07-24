@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Dosis:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
+.my-col {
+  padding: 10px;
+  margin: 10px 0px;
+}
+
+.my-col .for-contact {
+  border: 1px solid yellow;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+  overflow: auto;
+}
+
+.my-col .for-contact .for-text {
+  color: white;
+  font-size: 1.2rem;
+  margin: 0;
+  font-family: "Dosis", sans-serif;
+}
+
+.my-col .for-contact .msg {
+  color: rgb(219, 236, 186);
+  font-family: "Dancing Script", cursive;
+}
+
+.contact .my-col .for-contact .my-btn {
+  padding: 10px;
+  margin: 10px 5px;
+}
+
+.my-col .for-contact .my-btn .for-btn {
+  background-color: #990033;
+  margin: 20px 10px;
+  color: white;
+  padding: 10px 30px;
+  text-decoration: none;
+  font-size: 1.2rem;
+  border-radius: 40px;
+  outline: 1px solid #990033;
+  font-weight: 600;
+  transition: all 0.3s ease-in-out;
+}
+
+.my-col .for-contact .my-btn .for-btn:hover {
+  outline-offset: 5px;
+  background-color: yellow;
+  color: black;
+}
+
+@media (max-width: 1200px) {
+  .my-col .for-contact .for-text {
+    font-size: 1rem;
+  }
+
+  .my-col .for-contact .msg {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .my-col .for-contact .for-text {
+    font-size: 1rem;
+  }
+
+  .my-col .for-contact .msg {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .my-col .for-contact .for-text {
+    font-size: 1.3rem;
+  }
+
+  .my-col .for-contact .for-btn {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 578px) {
+  .my-col .for-contact .for-text {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .my-col .for-contact .for-text {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 330px) {
+  .my-col .for-contact .for-text {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 300px) {
+  .my-col .for-contact .for-text {
+    font-size: 0.8rem;
+  }
+}

@@ -1,0 +1,212 @@
+.services {
+  padding: 30px;
+}
+
+.services .heading {
+  padding: 10px 0px 30px;
+  font-size: 2.5rem;
+}
+
+.services .for-div {
+  margin: 10px 0px;
+}
+
+.services .for-div .for-all {
+  border: 2px solid white;
+  padding: 10px 15px;
+  font-family: "Times New Roman", Times, serif;
+  border-radius: 5px;
+}
+
+.services .for-div .for-all .for-image {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.services .for-div .for-all .for-image img {
+  border-radius: 10px;
+  height: 270px;
+}
+
+.services .for-div .for-all .for-text-plus-price {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  flex-direction: row;
+  width: 100%;
+  padding: 10px 0px 0px;
+  margin-bottom: 0;
+  font-size: 1.1rem;
+  font-size: 300;
+}
+
+.services .for- div .for-all .for-text-plus-price .price .from,
+.services .for- div .for-all .for-text-plus-price .price .to {
+  margin: 0px 5px;
+}
+
+.services .for-div .for-all .for-title {
+  margin-top: 0;
+}
+
+.services .for-div .for-all .for-title .title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.services .for-div .for-all .for-desc .desc {
+  font-size: 1rem;
+}
+
+.services .for-div .for-all .for-btns {
+  padding: 20px 0px;
+}
+
+.services .for-div .for-all .for-btns .for-btn {
+  background-color: #990033;
+  margin: 20px 10px;
+  color: white;
+  padding: 10px 30px;
+  text-decoration: none;
+  font-size: 1.2rem;
+  border-radius: 40px;
+  outline: 1px solid #990033;
+  font-weight: 600;
+}
+
+.services .for-div .for-all .for-btns .for-btn:hover {
+  outline-offset: 5px;
+  background-color: yellow;
+  color: black;
+}
+
+@media (max-width: 1200px) {
+  .services .for-div .for-all .for-image img {
+    height: 230px;
+  }
+
+  .services .for-div .for-all .for-text-plus-price {
+    font-size: 0.8rem;
+  }
+
+  .services .for-div .for-all .for-title .title {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .services .for-div .for-all .for-image img {
+    height: 270px;
+  }
+
+  .services .for-div .for-all .for-text-plus-price {
+    font-size: 1.1rem;
+  }
+
+  .services .for-div .for-all .for-title .title {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .services .heading {
+    padding: 10px 0px 30px;
+    font-size: 2rem;
+  }
+
+  .services {
+    padding: 30px 10px;
+  }
+}
+
+@media (max-width: 400px) {
+  .services .for-div .for-all .for-image img {
+    height: 230px;
+  }
+
+  .services .for-div .for-all .for-text-plus-price {
+    font-size: 0.8rem;
+  }
+
+  .services .for-div .for-all .for-title .title {
+    font-size: 1.3rem;
+  }
+
+  .services .for-div .for-all .for-desc .desc {
+    font-size: 0.8rem;
+  }
+
+  .services .for-div .for-all .for-btns .for-btn {
+    background-color: #990033;
+    margin: 20px 5px;
+    padding: 10px 20px;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 350px) {
+  .services .for-div .for-all .for-image img {
+    height: 200px;
+  }
+
+  .services .for-div .for-all .for-text-plus-price {
+    font-size: 0.7rem;
+  }
+
+  .services .for-div .for-all .for-title .title {
+    font-size: 1.2rem;
+  }
+
+  .services .for-div .for-all .for-desc .desc {
+    font-size: 0.7rem;
+  }
+}
+
+@media (max-width: 330px) {
+  .services .for-div .for-all .for-image img {
+    height: 180px;
+  }
+
+  .services .for-div .for-all .for-text-plus-price {
+    font-size: 10px;
+  }
+
+  .services .for-div .for-all .for-title .title {
+    font-size: 17px;
+  }
+
+  .services .for-div .for-all .for-desc .desc {
+    font-size: 10px;
+  }
+
+  .services .for-div .for-all .for-btns .for-btn {
+    margin: 20px 5px;
+    padding: 10px 15px;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 300px) {
+  .services .for-div .for-all .for-image img {
+    height: 170px;
+  }
+
+  .services .for-div .for-all .for-text-plus-price {
+    font-size: 10px;
+  }
+
+  .services .for-div .for-all .for-title .title {
+    font-size: 16px;
+  }
+
+  .services .for-div .for-all .for-desc .desc {
+    font-size: 10px;
+  }
+
+  .services .for-div .for-all .for-btns .for-btn {
+    font-size: 0.8rem;
+  }
+}

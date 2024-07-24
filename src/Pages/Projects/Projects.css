@@ -1,0 +1,66 @@
+.projects {
+  padding: 40px 1px;
+}
+
+.projects .heading {
+  color: white;
+  font-size: 2.5rem;
+  margin: 40px 0;
+}
+
+.projects .card {
+  border: 2px solid white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: yellow;
+  color: black;
+  border-radius: 10px;
+  height: 500px;
+  width: auto;
+  margin: 10px 0;
+}
+
+.projects .card .my-image {
+  height: 250px;
+}
+
+.projects .card .card-body .card-title {
+  font-size: 1.5rem;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+.projects .card .card-body .card-text {
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+.projects .card .card-body .my-btn {
+  margin: 10px;
+  color: black;
+  font-size: 1rem;
+}
+
+.projects .card .card-body .my-btn:hover,
+.projects .card .card-body .my-btn:focus {
+  background-color: transparent;
+  outline: none;
+  box-shadow: none;
+}
+
+@media (max-width: 767px) {
+  .projects .card {
+    height: 450px;
+  }
+}
+
+@media (max-width: 400px) {
+  .projects .card .card-body .card-title {
+    font-size: 1.2rem;
+  }
+
+  .projects .card .card-body .card-text {
+    font-size: 0.8rem;
+  }
+}

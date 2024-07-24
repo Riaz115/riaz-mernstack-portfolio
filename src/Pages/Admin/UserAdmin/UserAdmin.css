@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
+.user .my-col {
+  padding: 10px;
+  margin: 10px 0px;
+}
+
+.user .my-col .for-user {
+  border: 1px solid yellow;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+  overflow: auto;
+}
+
+.user .my-col .for-user .for-text {
+  color: white;
+  font-size: 1.2rem;
+  margin: 0;
+  font-family: "Dancing Script", cursive;
+}
+
+.user .my-col .for-user .for-btns {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 20px 10px 10px;
+}
+
+.user .my-col .for-user .for-btns .for-btn {
+  background-color: #990033;
+  margin: 10px;
+  color: white;
+  padding: 10px 30px;
+  text-decoration: none;
+  font-size: 1.2rem;
+  border-radius: 40px;
+  outline: 1px solid #990033;
+  font-weight: 600;
+  transition: all 0.3s ease-in-out;
+}
+
+.user .my-col .for-user .for-btns .for-btn:hover {
+  outline-offset: 5px;
+  background-color: yellow;
+  color: black;
+}
+
+@media (max-width: 992px) {
+  .user .my-col .for-user .for-text {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .user .my-col .for-user .for-text {
+    font-size: 1.3rem;
+  }
+
+  .user .my-col .for-user .for-btns .for-btn {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 578px) {
+  .user .my-col .for-user .for-text {
+    font-size: 1.2rem;
+  }
+
+  .user .my-col .for-user .for-btns .for-btn {
+    font-size: 15px;
+    padding: 10px 20px;
+  }
+}
+
+@media (max-width: 400px) {
+  .user .my-col .for-user .for-text {
+    font-size: 1rem;
+  }
+
+  .user .my-col .for-user .for-btns {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 5px 10px;
+  }
+}
+
+@media (max-width: 330px) {
+  .user .my-col .for-user .for-text {
+    font-size: 0.9rem;
+  }
+  .user .my-col .for-user .for-btns .for-btn {
+    font-size: 14px;
+    padding: 8px 18px;
+    margin: 10px 7px;
+  }
+}
+
+@media (max-width: 300px) {
+  .user .my-col .for-user .for-text {
+    font-size: 0.8rem;
+  }
+}

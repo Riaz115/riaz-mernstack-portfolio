@@ -1,0 +1,133 @@
+.contact {
+  padding: 10px 5px;
+}
+
+.contact .container {
+  padding: 10px;
+}
+
+.contact .for-error {
+  color: red;
+  font-weight: 300;
+  font-size: 0.9rem;
+  margin-left: 15px;
+  margin-bottom: 0;
+}
+
+.contact .container .heading {
+  font-size: 3rem;
+  font-weight: 600;
+  margin: 0px 10px 20px;
+}
+
+.contact .container .for-image {
+  margin: 10px 1px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact .container .for-image img {
+  border-radius: 10px;
+  height: 400px;
+}
+
+.contact .container .left-side .my-form {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+}
+
+.contact .container .left-side .my-form .for-label {
+  font-size: 1rem;
+  font-weight: 400;
+  margin-left: 10px;
+  margin-top: 15px;
+  margin-bottom: 0;
+}
+
+.contact .container .left-side .my-form .for-input {
+  margin-top: 2px;
+  margin-bottom: 0;
+  width: 80%;
+  padding: 5px 2px 5px 10px;
+  border: none;
+  border-radius: 30px;
+  outline: none;
+  background-color: rgb(73, 73, 82);
+  color: white;
+}
+
+.contact .container .left-side .my-form .for-input:hover {
+  box-shadow: inset 0 0 3px white;
+}
+
+.contact .container .left-side .my-form textarea {
+  width: 80%;
+  height: 100px;
+  padding: 5px 2px 5px 10px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  background-color: rgb(73, 73, 82);
+  color: white;
+}
+
+.contact .container .left-side .my-form textarea:hover {
+  box-shadow: inset 0 0 3px white;
+}
+
+.contact .container .left-side .my-form .for-btn {
+  background-color: #990033;
+  margin: 20px 10px;
+  color: white;
+  padding: 10px 30px;
+  text-decoration: none;
+  font-size: 1.2rem;
+  border-radius: 40px;
+  outline: 1px solid #990033;
+  font-weight: 600;
+}
+
+.contact .container .left-side .my-form .for-btn:hover {
+  outline-offset: 5px;
+  background-color: yellow;
+  color: black;
+}
+
+@media (max-width: 992px) {
+  .contact .container .for-image {
+    display: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .contact .container .left-side .my-form .for-input {
+    width: 90%;
+  }
+
+  .contact .container .left-side .my-form textarea {
+    width: 90%;
+  }
+}
+
+@media (max-width: 578px) {
+  .contact .container .heading {
+    font-size: 2rem;
+  }
+
+  .contact .container .left-side .my-form .for-input {
+    width: 100%;
+  }
+
+  .contact .container .left-side .my-form textarea {
+    width: 100%;
+  }
+
+  .contact .for-error {
+    font-size: 0.7rem;
+    margin-left: 5px;
+  }
+}
