@@ -125,7 +125,7 @@ function Login() {
                     Password
                   </label>
                   <input
-                    type="text"
+                    type="password"
                     name="password"
                     className="for-input"
                     placeholder="enter your password"
