@@ -17,6 +17,7 @@ import PageNotFound from "./Pages/PageNotFound/PageNotFound";
 import UpdateServices from "./Pages/Admin/UpdateServices/UpdateServices";
 import UpdateUser from "./Pages/Admin/UpdateUser/UpdateUser";
 import Logout from "./Pages/Logout/Logout";
+import Skills from "./Pages/Skills/Skills";
 
 function App() {
   return (
@@ -27,10 +28,12 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
+          <Route path="/skills" element={<Skills />} />
           <Route path="/projects" element={<Projects />} />
           <Route path="/services" element={<Services />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/register" element={<Register />} />
+
           <Route path="/login" element={<Login />} />
 
           <Route path="/admin" element={<MyAdmin />}>

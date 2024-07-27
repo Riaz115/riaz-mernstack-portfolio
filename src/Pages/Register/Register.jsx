@@ -5,6 +5,8 @@ import registerImage from "../../assests/Register/registerImage.png";
 import validator from "validator";
 import { toast } from "react-toastify";
 import { UseCustomeHook } from "../../Store/MyDataProvider";
+import { FaEye } from "react-icons/fa";
+import { FaEyeSlash } from "react-icons/fa";
 
 function Register() {
   const [name, setName] = useState("");
@@ -14,6 +16,8 @@ function Register() {
   const [confirmPassword, setConfirmPassword] = useState("");
   const [formData, setFormData] = useState(null);
   const [Errors, setErorrs] = useState({});
+  const [showPass, setShowPass] = useState(false);
+  const [showConfPass, setShowConfPass] = useState(false);
 
   //this is for the custom hook
   const { forStoreToken } = UseCustomeHook();
@@ -64,6 +68,7 @@ function Register() {
         confirmPassword,
       };
       setFormData(formData);
+      console.log(formData);
 
       //this is for send and store data in database api function
       const forSendata = async () => {
@@ -121,7 +126,6 @@ function Register() {
                     UserName
                   </label>
                   <input
-                    type="text"
                     className="for-input"
                     placeholder="enter your name"
                     autoComplete="false"
@@ -166,16 +170,32 @@ function Register() {
                   <label htmlFor="password" className="for-label">
                     Password
                   </label>
-                  <input
-                    type="password"
-                    className="for-input"
-                    placeholder="enter your password"
-                    autoComplete="false"
-                    name="password"
-                    onChange={(e) => {
-                      setPassword(e.target.value);
-                    }}
-                  />
+                  <div className="password-input">
+                    <input
+                      type={showPass ? "text" : "password"}
+                      className="my-input"
+                      placeholder="enter your password"
+                      autoComplete="false"
+                      name="password"
+                      onChange={(e) => {
+                        setPassword(e.target.value);
+                      }}
+                    />
+                    <span>
+                      {showPass ? (
+                        <FaEyeSlash
+                          className="for-icon"
+                          onClick={() => setShowPass(!showPass)}
+                        />
+                      ) : (
+                        <FaEye
+                          className="for-icon"
+                          onClick={() => setShowPass(!showPass)}
+                        />
+                      )}
+                    </span>
+                  </div>
+
                   {Errors.password && (
                     <p className="for-error">{Errors.password}</p>
                   )}
@@ -184,15 +204,31 @@ function Register() {
                   <label htmlFor="confirm-password" className="for-label">
                     Confirm Password
                   </label>
-                  <input
-                    type="password"
-                    className="for-input"
-                    placeholder="confirm password"
-                    name="confirm-password"
-                    onChange={(e) => {
-                      setConfirmPassword(e.target.value);
-                    }}
-                  />
+                  <div className="password-input">
+                    <input
+                      type={showConfPass ? "text" : "password"}
+                      placeholder="confirm password"
+                      className="my-input"
+                      name="confirm-password"
+                      onChange={(e) => {
+                        setConfirmPassword(e.target.value);
+                      }}
+                    />
+                    <span>
+                      {showConfPass ? (
+                        <FaEyeSlash
+                          className="for-icon"
+                          onClick={() => setShowConfPass(!showConfPass)}
+                        />
+                      ) : (
+                        <FaEye
+                          className="for-icon"
+                          onClick={() => setShowConfPass(!showConfPass)}
+                        />
+                      )}
+                    </span>
+                  </div>
+
                   {Errors.confirmPassword && (
                     <p className="for-error">{Errors.confirmPassword}</p>
                   )}

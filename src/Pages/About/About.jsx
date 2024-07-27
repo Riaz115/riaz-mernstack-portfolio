@@ -15,29 +15,29 @@ function About() {
               welcome to my website
               <span className="user-name"> {user.name} </span>
             </p>
-            <h2 className="heading text-capitalize">why choose us?</h2>
+            <h2 className="heading text-capitalize">i am riaz ahmad</h2>
             <p className="for-text text-capitalize first-para">
-              experties: our team consist of experienced IT Professionals who
-              are professional about staying up-to-data with the latest industry
-              trends.
+              welcome to my portfolio . i am muhammad riaz ahmad, a passionate
+              web developer specializing in MERN stack technologies: MongoDB,
+              Express.js React and Node.js. With a keen eye for detail and a
+              commitment to crafting seamless user experiences.
             </p>
             <p className="for-text text-capitalize">
-              customization: we understand that every bussiness is unique.
-              that's why we create solutions that are declared to your specific
-              needs and goals.
+              i build dynamic and responsive web applications from scratch. my
+              portfolio showcases a variety projects, highlighting my
+              proficiency in creating scalable, hight performance solutions
+              tailored to client needs.
             </p>
             <p className="for-text text-capitalize">
-              customer-Contric approach: we priortize your satisfication and
-              provide top-match support to address your IT conerns
+              whether you're looking for a sleek, modern design or complex
+              backend functionality, my work reflects a deep understanding of
+              both frontend and backend development .
             </p>
             <p className="for-text text-capitalize">
-              afordability : we offer competitive prices without compromising on
-              the quality of services
+              dive into my projects to see how i leverage the MERN stack to
+              bring innovative ideas to life
             </p>
-            <p className="for-text text-capitalize">
-              relability : count on us to be there when you are need us . we are
-              committed to ensuring your IT environment is reliable
-            </p>
+
             <div className="forBtn">
               <Link to="/contact" className="for-button">
                 Contact Now

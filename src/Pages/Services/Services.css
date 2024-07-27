@@ -109,6 +109,10 @@
   .services .for-div .for-all .for-title .title {
     font-size: 1.5rem;
   }
+
+  .services .for-div .for-all .for-desc .desc {
+    font-size: 0.8rem;
+  }
 }
 
 @media (max-width: 767px) {
@@ -119,6 +123,10 @@
 
   .services {
     padding: 30px 10px;
+  }
+
+  .services .for-div .for-all .for-desc .desc {
+    font-size: 1rem;
   }
 }
 

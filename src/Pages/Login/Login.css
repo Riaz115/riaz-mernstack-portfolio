@@ -66,6 +66,30 @@
   margin: 0 0px 0 10px;
 }
 
+.login .container .left-side .my-form .for-password-show {
+  width: 90%;
+  background-color: rgb(73, 73, 82);
+  border-radius: 30px;
+}
+
+.login .container .left-side .my-form .for-password-show .for-icon {
+  font-size: 20px;
+}
+
+.login .container .left-side .my-form .for-password-show .for-icon:hover {
+  cursor: pointer;
+}
+
+.login .container .left-side .my-form .for-password-show .my-input {
+  width: 90%;
+  background-color: rgb(73, 73, 82);
+  border-radius: 30px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 5px 2px 5px 10px;
+}
+
 .login .container .left-side .my-form .for-input {
   margin-top: 2px;
   margin-bottom: 0;
@@ -99,6 +123,7 @@
   outline-offset: 5px;
   background-color: yellow;
   color: black;
+  cursor: pointer;
 }
 
 @media (max-width: 992px) {
@@ -128,6 +153,15 @@
 
   .login .container .left-side .my-form .for-input {
     width: 100%;
+  }
+
+  .login .container .left-side .my-form .for-password-show {
+    width: 100%;
+    padding-right: 5px;
+  }
+
+  .login .container .left-side .my-form .for-password-show .for-icon {
+    font-size: 15px;
   }
 
   .login .container .left-side .my-form textarea {

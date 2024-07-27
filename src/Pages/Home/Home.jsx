@@ -2,6 +2,11 @@ import React from "react";
 import { Link } from "react-router-dom";
 import homeImage from "../../assests/Home/HomeImage.jpg";
 import "./Home.css";
+import About from "../About/About";
+import Skills from "../Skills/Skills";
+import Services from "../Services/Services";
+import Projects from "../Projects/Projects";
+import Contact from "../Contact/Contact";
 
 function Home() {
   return (
@@ -11,20 +16,22 @@ function Home() {
           <div className="row">
             <div className="col-lg-6 for-col left-side">
               <p className="top-text text-capitalize">
-                we are the world best IT company
+                my name is muhammad riaz ahmad
               </p>
               <h2 className="heading text-capitalize">
-                welcome to serani tech house
+                i am <span className="text-info">MERN</span> stack developer
               </h2>
               <p className="para text-capitalize">
-                are you ready to make your bussinessto the next level with
-                cutting-edge it solutions? look no further at serani tech house.
-                we specialize providing innovative IT services and solutions to
-                meet your unique needs.
+                welcome to my portfolio! i am a passionate MERN stack developer
+                specializing in building dynamic, full stack web applications
+                With expertise in MongoDB, Express.js, React and Node.js. i
+                craft seamless and scalable solutions. Explore my projects to
+                see how i turn innovative ideas into interactive
+                high-performance digital experiences.
               </p>
               <div className="forBtn">
-                <Link to="/contact" className="for-button">
-                  Contact Now
+                <Link to="/contact" className="for-button text-capitalize">
+                  download resume
                 </Link>
                 <Link to="/about" className="for-button about-btn">
                   Learn More
@@ -67,6 +74,11 @@ function Home() {
           </div>
         </div>
       </section>
+      <About />
+      <Skills />
+      <Services />
+      <Projects />
+      <Contact />
     </>
   );
 }

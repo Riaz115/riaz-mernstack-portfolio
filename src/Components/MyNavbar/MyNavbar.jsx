@@ -41,7 +41,7 @@ function MyNavbar() {
     <>
       <nav className="navbar navbar-expand-lg">
         <div className="container">
-          <Link className="navbar-brand my-brand" to="#">
+          <Link className="navbar-brand my-brand" to="/">
             <span className="for-logo">
               <GiEagleEmblem className="my-logo" />
             </span>
@@ -89,6 +89,15 @@ function MyNavbar() {
                   onClick={handleClickNavLink}
                 >
                   About
+                </NavLink>
+              </li>{" "}
+              <li className="nav-item">
+                <NavLink
+                  to="/skills"
+                  className="nav-link"
+                  onClick={handleClickNavLink}
+                >
+                  skills
                 </NavLink>
               </li>{" "}
               <li className="nav-item">

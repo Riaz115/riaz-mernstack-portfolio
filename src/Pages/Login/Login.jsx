@@ -5,12 +5,15 @@ import loginImage from "../../assests/Login/LoginImage.png";
 import { Link, useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
 import { UseCustomeHook } from "../../Store/MyDataProvider";
+import { FaEye } from "react-icons/fa";
+import { FaEyeSlash } from "react-icons/fa";
 
 function Login() {
   const [email, setMyEmail] = useState("");
   const [password, setPassword] = useState("");
   const [formDatas, setFormData] = useState(null);
   const [Errors, setErorrs] = useState({});
+  const [forShowPass, setForShowPass] = useState(false);
 
   //this is for navigate
   const navigate = useNavigate();
@@ -124,16 +127,34 @@ function Login() {
                   <label htmlFor="password" className="for-label">
                     Password
                   </label>
-                  <input
-                    type="password"
-                    name="password"
-                    className="for-input"
-                    placeholder="enter your password"
-                    autoComplete="off"
-                    onChange={(e) => {
-                      setPassword(e.target.value);
-                    }}
-                  />
+
+                  <div className="for-password-show">
+                    <input
+                      type={forShowPass ? "text" : "password"}
+                      name="password"
+                      className="my-input"
+                      placeholder="enter your password"
+                      autoComplete="off"
+                      onChange={(e) => {
+                        setPassword(e.target.value);
+                      }}
+                    />
+
+                    <span>
+                      {forShowPass ? (
+                        <FaEyeSlash
+                          className="for-icon"
+                          onClick={() => setForShowPass(!forShowPass)}
+                        />
+                      ) : (
+                        <FaEye
+                          className="for-icon"
+                          onClick={() => setForShowPass(!forShowPass)}
+                        />
+                      )}
+                    </span>
+                  </div>
+
                   {Errors.password && (
                     <p className="for-error">{Errors.password}</p>
                   )}

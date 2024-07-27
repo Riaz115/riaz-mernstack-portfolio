@@ -145,6 +145,12 @@
   .home .container .row .left-side .heading {
     font-size: 1.8rem;
   }
+
+  .home .left-side .forBtn .for-button {
+    display: block;
+    text-align: center;
+    margin: 10px 5px;
+  }
 }
 
 @media (max-width: 350px) {
@@ -156,12 +162,6 @@
   .home .container .row .right-side .for-image img {
     width: 250px;
     height: 250px;
-  }
-
-  .home .left-side .forBtn .for-button {
-    display: block;
-    text-align: center;
-    margin: 10px 5px;
   }
 
   .home .container .row .left-side .heading {
