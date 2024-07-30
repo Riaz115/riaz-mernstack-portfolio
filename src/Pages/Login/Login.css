@@ -55,11 +55,7 @@
   width: 100%;
 }
 
-.login .left-side .my-form .every-div .resetPassword-btn {
-  font-size: 1rem;
-  text-decoration: none;
-  margin: 5px 0px 5px 15px;
-}
+
 .login .container .left-side .my-form .for-label {
   font-size: 1rem;
   font-weight: 400;
