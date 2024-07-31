@@ -7,6 +7,7 @@ import Skills from "../Skills/Skills";
 import Services from "../Services/Services";
 import Projects from "../Projects/Projects";
 import Contact from "../Contact/Contact";
+import Resume from "../MyResume/resume.pdf"
 
 function Home() {
   return (
@@ -30,9 +31,9 @@ function Home() {
                 high-performance digital experiences.
               </p>
               <div className="forBtn">
-                <Link to="/contact" className="for-button text-capitalize">
+                <a href={Resume} className="for-button text-capitalize" download="resume.pdf">
                   download resume
-                </Link>
+                </a>
                 <Link to="/about" className="for-button about-btn">
                   Learn More
                 </Link>

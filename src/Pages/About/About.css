@@ -41,24 +41,23 @@
 }
 
 .about .left-side .forBtn .for-button {
-  padding: 5px 15px;
-  color: white;
+  padding: 12px 22px;
+  color:white;
   font-size: 14px;
   text-decoration: none;
   border: 2px solid white;
-  background-color: blue;
-  border-radius: 5px;
+  background-color: #8C3061;
+  border-radius: 30px;
   margin: 5px 10px;
   transition: all 0.3s ease-in-out;
+
 }
 
 .about .left-side .forBtn .for-button:hover {
-  background-color: transparent;
+  background-color:#7C00FE;
 }
 
-.about .left-side .forBtn .about-btn {
-  background-color: transparent;
-}
+
 
 .about .container .row .right-side {
   display: flex;
