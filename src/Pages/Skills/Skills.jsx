@@ -106,7 +106,7 @@ function Skills() {
     <>
       <section className="skills ">
         <div className="container">
-          <h1 className="for-heading">skills</h1>
+          <h1 className="for-heading">Skills</h1>
           <div className="row">
             <h1 className="skill-heading text-capitalize ">front end</h1>
             {myFrontEndSkills.map((item, index) => (
